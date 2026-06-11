@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All CSS Selectors Demo</title>
+    <style>
+        /*Desecendant tag selector */
+        div h1{
+            background-color: orange;
+        }
+
+        /* Child Selector */
+        ul > li{
+            list-style-type: square;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* General-Sibling Selector */
+        div ~ p{
+            background-color: aqua;
+        }
+
+        /* Adjacent Sibling Selector */
+        h3 + p{
+            background-color: bisque;
+        }
+
+
+        *{
+            font-style: italic;
+        }
+        a[title]
+        {
+            color: chartreuse;
+        }
+        a[href]
+        {
+            color: deeppink;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Desecendant Selector -->
+     <div>
+        <h1>This is heading-1</h1>
+        <h1>This is heading-2</h1>
+        <p>This is 1st para</p>
+        <p>This is 2nd para</p>
+        <p>This is 3rd para</p>
+     </div>
+     <h1>This is head outside the div.</h1>
+     <p>This is para outside div.</p>
+
+     <!-- Child Selector -->
+      Programming Languages :
+    <ul>
+        <li>Java</li>
+        <li>.Net</li>
+        <li>PHP</li>
+        <li>Python</li>
+        <li>C++</li>
+    </ul>
+
+    <!-- General-Sibiling Selector -->
+     <h3>This is simple h3 tag.</h3>
+     <p>This is para-1</p>
+     <p>This para is inside the div.</p>
+
+    <!-- Adjacent Sibling Selector -->
+     <h3>This is simple h3 tag.</h3>
+     <p>This is simple para tag.</p>
+     <p>This is one simple para tag.</p>
+
+    <!-- Attribute Selector -->
+     <a href="https://www.google.com/">Click here for more info...</a>
+</body>
+</html>

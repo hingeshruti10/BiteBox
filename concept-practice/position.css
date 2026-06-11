@@ -1,0 +1,54 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10;
+    padding:20px
+}
+section{
+    margin-bottom: 60px;
+    padding: 20px;
+    border: 1px solid rgb(28, 28, 151);
+}
+.box{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(62, 194, 73);
+    padding: 0px 5px 10px 20px;
+    border: 1px solid rgb(121, 189, 203);
+    margin-top: 25px;
+}
+.static{
+    position: static;
+
+}
+.relative{
+    position: relative;
+    top:10px;
+    left: 50px;
+    background-color: green;
+}
+
+.container{
+    position: relative;
+    height: 200px;
+    background-color: blueviolet;
+}
+.absolute{
+    position:absolute;
+    top: 20px;
+    left:20px;
+    background-color: coral;
+}
+.fixed{
+    position: fixed;
+    top:20px;
+    right:20px;
+    background-color: orange;
+    z-index:1000;
+
+}
+.sticky{
+    position: sticky;
+    top:0;
+    background-color: plum;
+    z-index: 500;
+}
