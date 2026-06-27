@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even-Odd</title>
+</head>
+
+<body>
+    <h2>Even-Odd Check</h2>
+    <input type="num" id="num" placeholder="Enter number">
+    <br><br>
+
+    <button onclick="check()">Check</button>
+
+    <p id="result">Check result ? </p>
+
+    <script>
+        function check() {
+            let num = document.getElementById("num").value;
+            let result = document.getElementById('result')
+
+            if (num % 2 == 0) {
+                result.style.color='green';
+                result.innerHTML = " Even number";
+            }
+            else {
+                result.style.color='red';
+                result.innerHTML = "Odd number";
+            }
+        }
+    </script>
+</body>
+
+</html>

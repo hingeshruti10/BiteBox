@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num" placeholder="Enter Number :">
+    <button onclick="print_for_loop()">Prints Numbers</button>
+
+    <p id="result"></p>
+    <script>
+        function print_for_loop(){
+
+            let num = Number(document.getElementById("num").value);
+            let output = "";
+
+            for(let i=1 ; i<=num ; i++){
+                output = output + i +"<br>";
+            }
+            document.getElementById("result").innerHTML=output;
+        }
+    </script>
+</body>
+</html>

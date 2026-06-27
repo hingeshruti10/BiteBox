@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
     </style>
 </head>
+
 <body>
     <script src="https://kit.fontawesome.com/0dd752709c.js" crossorigin="anonymous"></script>
     <header>
@@ -25,25 +27,81 @@
                 <li><a href="./Menu.html" target="_self"><i class="fa-solid fa-bars"></i></a></li>
                 <li><a href="./BiteDeals.html">Bite Deals</a></li>
                 <li><a href="./Cart.html"><i class="fa-solid fa-cart-plus"></i>Cart</a></li>
-                <li><a href="./Login.html"><button id="login-button" ><i class="fa-solid fa-right-to-bracket"></i>Login</button></a></li>
+                <li><a href="./Login.html"><button id="login-button"><i
+                                class="fa-solid fa-right-to-bracket"></i>Login</button></a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Login Form -->
-     <section class="auth-container">
+    <section class="auth-container">
         <div class="auth-box">
-        <form>
-            <h2>Login to Bite<span>Box</span></h2>
-            <input type="email" placeholder="Enter Email" required>
-            <input type="password" placeholder="Enter password" required>
-            <button>Login</button>
-            <p><a href="">Forgot Password</a></p>
-            <p>Don't have an account
-            <a href="./signup.html">Sign Up</a></p>
-            
-        </form>
+            <form>
+                <h2>Login to Bite<span>Box</span></h2>
+                <input type="email" id="email" placeholder="Enter Email" required>
+                <div style="position: relative;">
+                    <input type="password" id="password" placeholder="Enter password" required>
+
+                    <span onclick="showPassword()"
+                        style="position: absolute; right: 10px; top: 30px; transform: translateY(-50%); cursor: pointer; color: black;">
+                        <i class="fa-solid fa-eye"></i>
+                    </span>
+                </div>
+
+                <button type="button" onclick="login()">Login</button>
+                <p><a href="">Forgot Password</a></p>
+                <p>Don't have an account
+                    <a href="./signup.html">Sign Up</a>
+                </p>
+
+                <p id="error" style="color: red;"></p>
+
+            </form>
         </div>
-     </section>
+    </section>
+    <!-- Footer -->
+    <footer>
+        
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>Bite <span>Box</span></h2>
+                <p>Delicious food delivered to your doorsteps,Fresh,Fast and Tasty!!</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul type="none">
+                <li><a href="./index.html" target="_blank">Home</a></li>
+                <li><a href="./Menu.html" target="_self">Menu</a></li>
+                <li><a href="./BiteDeals.html">Bite Deals</a></li>
+                <li><a href="./Cart.html">Cart</a></li>
+                <li><a href="./Login.html">Login</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contacts us</h3>
+                <p><i class="fa-solid fa-envelope"></i>Email : support@bitebox.com</p>
+                <br>
+                <p><i class="fa-solid fa-phone"></i>Phone : +91 9786543235</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Follow us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>       
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy;Copyright : Shruti Hinge 2026 | Bite Box | All Rights Reserved</p>
+        </div>
+
+    </footer>
+    <script src="./js/scripts.js"></script>
 </body>
+
 </html>

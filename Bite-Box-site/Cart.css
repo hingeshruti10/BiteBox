@@ -6,6 +6,10 @@ table{
     overflow: hidden;
     margin:auto;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cart{
+    height: 100vh;
 }
 
 thead{
@@ -41,7 +45,7 @@ tbody tr{
     cursor: pointer;
     border-radius: 5px;
 }
-.remove :hover{
+.remove:hover{
     background: darkgray;
 }
 
